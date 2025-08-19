@@ -1,0 +1,53 @@
+body{
+    background-color: #FDDB29;
+}
+
+.flash{
+    display: none;
+    box-shadow: 0 0 0 9999px #000;
+    position: absolute;
+}
+
+body.dark >.flash{
+    display: block;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
+body.dark >.button{
+    background-color:#15FB1F;
+    position: absolute;
+    z-index: 1;
+    opacity: 80%;
+    border-radius: 10px;
+}
+
+body.dark >.moon{
+    display: block;
+    background-color: #15FB1F;
+    border-radius: 50%;
+    position: sticky;
+    z-index: 1;
+}
+.moon:hover{
+    opacity: 60%;
+}
+
+.moon{
+    display: none;
+}
+
+body.dark >.sun{
+    display: none;
+}
+
+.range::-webkit-slider-runnable-track{
+    background:black;
+    border-radius: 10px;
+    color: white;
+}
+
+.range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    color: white;
+}
